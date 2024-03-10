@@ -25,7 +25,7 @@ class DataSaver:
 
         file_contents[str(datetime.now())] = data
         with open(file, 'w') as storage:
-            json.dump(file_contents,storage)
+            json.dump(file_contents,storage, indent=2)
 
         return file_contents
 
